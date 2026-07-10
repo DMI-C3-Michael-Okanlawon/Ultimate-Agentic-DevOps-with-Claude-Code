@@ -60,7 +60,7 @@ resource "aws_s3_bucket_policy" "site" {
     ]
   })
 
-  depends_on = [aws_s3_bucket_public_access_block.site]
+  
 }
 
 # CloudFront Distribution
@@ -107,8 +107,6 @@ resource "aws_cloudfront_distribution" "site" {
     Project     = var.project_name
     Environment = var.environment
   }
-
-  depends_on = [aws_s3_bucket_policy.site]
 }
 
 # Data source for CachingOptimized managed cache policy
