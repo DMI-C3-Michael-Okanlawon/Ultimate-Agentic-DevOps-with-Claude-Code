@@ -1,0 +1,2 @@
+- [Terraform baseline](project_terraform_baseline.md) — snapshot of portfolio-site infra (S3+CF+OAC, no IAM/OIDC/domain yet) as of 2026-07-10
+- [Recurring findings](project_recurring_findings.md) — 9 specific gaps from first audit; check these on re-audit before re-deriving
